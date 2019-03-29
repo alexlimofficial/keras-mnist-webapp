@@ -1,0 +1,52 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+    color: navy;
+    margin: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 35%;
+}
+
+.formInput {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit] {
+    background-color: navy;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+input[type=file] {
+    border: none;
+    padding: 10px 20px;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background-color: navy;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+}

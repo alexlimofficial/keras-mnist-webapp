@@ -4,19 +4,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylesheets/style.css')}}" />
     <title>MNIST Digit Classifier</title>   
 </head>   
 <body>
     <h1>MNIST DIGIT CLASSIFIER</h1>
+    <img src="{{url_for('static', filename='img/mnist_digits.gif')}}">
     <hr>
-    <p1>Please upload an image of a handwritten digit.</p1>
-    <br>
+    <p><strong>Please upload an image of a handwritten digit (jpg or png type only).</stron></p>
     <br>
     <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=submit value=Upload>
+      <div class="formInput">
+          <input type=file name=file>
+          <input type=submit value=Upload>
+      </div>
     </form>
 </body> 
-    
 </html>
     

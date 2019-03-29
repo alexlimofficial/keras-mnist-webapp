@@ -35,5 +35,9 @@ def load_model(PATH_TO_SAVED_MODEL, MODEL_NAME):
 
 def predict(model, image_path):
     pp_image = preprocess_image(image_path)
+    pp_image.save(image_path)
     im2arr = np.array(pp_image).reshape((1, 28, 28))
     return np.argmax(model.predict(im2arr))
+
+def remove_file(filepath):
+    os.remove(filepath)
